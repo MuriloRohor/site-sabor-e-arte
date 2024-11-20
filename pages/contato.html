@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato :: Sabor e Arte</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="icon" href="../favicon.png" type="image/png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Sabor e Arte</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="receitas_tradicionais.html">Receitas Tradicionais</a></li>
+            <li><a href="culinaria_internacional.html">Culinária Internacionais</a></li>
+            <li><a href="dicas_cozinhas.html">Dicas de Cozinha</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="contact-container">
+        <section class="contact-info">
+            <p>
+                Entre em contato conosco preenchendo o formulário abaixo. Estamos ansiosos para ouvir suas dúvidas, sugestões 
+                ou até mesmo compartilhar experiências gastronômicas! 
+            </p>
+        </section>
+
+        <div class="notification" id="notification">Mensagem para contato enviada! ✅</div>
+
+        <form class="contact-form" action="#" method="POST" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefone</label>
+                <input type="tel" id="phone" name="phone" placeholder="(XX) XXXXX-XXXX">
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" placeholder="Escreva sua mensagem aqui..." rows="5" required></textarea>
+            </div>
+            <button  class="btn-submit">Enviar</button>
+        </form>
+    </main>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/notificacao.js"></script>
+</body>
+</html>

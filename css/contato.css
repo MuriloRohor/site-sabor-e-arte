@@ -1,0 +1,114 @@
+/* Container principal */
+.contact-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* Formulário */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #7d0f2a;
+}
+
+.form-group textarea {
+    resize: none;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    transition: border-color 0.3s ease-in-out;
+    height: 150px;
+}
+
+.form-group input, .form-group textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #7d0f2a;
+    outline: none;
+}
+
+.btn-submit {
+    background: #7d0f2a;
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin-top: 1rem; 
+    align-self: flex-start; 
+}
+
+.btn-submit:hover {
+    background: #a3173b;
+}
+
+/* Notificação */
+.notification {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    background: #7d0f2a;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0s linear 0.5s;
+}
+
+/* exibir*/
+.notification.show {
+    opacity: 1; 
+    visibility: visible;
+    transform: translateY(0); 
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0s linear 0s; 
+}
+
+/* Desaparecer */
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}

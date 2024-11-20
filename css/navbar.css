@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+/* Reset */
+body, ul {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    padding: 0.5rem 2rem;
+    background: #7d0f2a;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #fff;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin: 0 1rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #f4c2c2; 
+    transform: scale(1.1); 
+  }
+  
+
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-toggle span {
+    background: #fff;
+    height: 3px;
+    margin: 3px 0;
+    width: 25px;
+    border-radius: 2px;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #7d0f2a; 
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .nav-links.active {
+        display: flex;
+    }
+  
+    .menu-toggle {
+        display: flex;
+    }
+  }
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto com transparência */
+    color: white; /* Texto branco para contraste */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 14px; /* Tamanho de texto legível */
+    margin-top: 20px; /* Adiciona espaço antes do footer */
+}
+
+.footer p {
+    margin: 0; /* Remove margens padrão */
+    font-family: 'Roboto', sans-serif; /* Fonte consistente com o site */
+}
+

@@ -1,0 +1,144 @@
+/* carousel*/
+.carousel-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 10px;
+  
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 300%;
+}
+
+.slide {
+  flex: 1;
+  min-width: 200px;
+}
+
+.slide img {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+.description {
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 1000px;
+  font-size: 1.6rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.custom-line {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2rem auto;
+  width: 90%;
+}
+
+/* topicos */
+.topics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  padding: 0 1rem;
+}
+
+.topic {
+  text-align: center;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.topic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.topic a {
+  text-decoration: none;
+  color: #7d0f2a;
+}
+
+.topic h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.topic img {
+  width: 100%;
+  height: 170px;
+  border-radius: 10px;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+
+.topic img:hover {
+  opacity: 0.9;
+}
+
+.topic p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #555;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center; 
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto; 
+  overflow: hidden; 
+}
+
+.hero-img {
+  width: 100%; 
+  height: auto;
+  object-fit: cover; 
+}
+
+
